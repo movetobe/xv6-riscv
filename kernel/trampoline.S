@@ -10,8 +10,9 @@
         # a page boundary.
         #
 
-#include "riscv.h"
-#include "memlayout.h"
+	# TODO: fix makefile cannot fine include files in .S
+#include "../arch/riscv/include/riscv.h"
+#include "include/modux/memlayout.h"
 
 .section trampsec
 .globl trampoline
